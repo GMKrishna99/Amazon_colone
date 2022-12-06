@@ -369,6 +369,7 @@ html,body{
     width: 400px;
     height: 400px;
     background-color: white;
+    
 }
 .container-1 .shopping-box .box h3{
     margin-top: 20px;
@@ -380,29 +381,58 @@ html,body{
 .container-1 .shopping-box .box a{
     font-size: 14px;
     display: block;
-    margin-top: 10px;
-    margin-left: 30px;
+    margin-left: 20px;
     text-align: left;
     text-decoration: none;
     color: var(--text--second--color);
 }
 .container-1 .shopping-box .box a:hover{
-    color: #00718594;
-}
+    color: var(--coupon--color);
+    text-decoration-line: underline;
+}   
 .container-1 .shopping-box .box .img{
     display: inline-block;
 }
 .container-1 .shopping-box .box .img span{
     display: block;
     font-size: 13px;
-    margin-left: 20px;
+    text-align:left;
+    margin-left: 10px;
+    margin-bottom: 15px;
 }
 .container-1 .shopping-box .box .img img{
-    width: 167px;
-    height: 120px;
+    width: 157px;
+    height: 110px;
     cursor: pointer;
-    margin-right: 0;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 /* box end*/
-
+/* sign in box start */
+.container-1 .shopping-box .sign-in{
+    background: var(--main-color);
+    width: 400px;
+    height: 200px;
+}
+.container-1 .shopping-box .sign-in .sign{
+  margin-top: 60px;
+}
+.container-1 .shopping-box .sign-in .sign h3{
+    font-size: 18px;
+}
+.container-1 .shopping-box .sign-in .sign button{
+    background-color: var(--button--color);
+    color: var(--fav--color);
+    border: none;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+.container-1 .shopping-box .sign-in .sign button:hover{
+    background-color: #e9c514;
+}
+/* sign in box end*/
 /* main content end */
+
