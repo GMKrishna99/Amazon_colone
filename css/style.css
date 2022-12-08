@@ -20,6 +20,7 @@
 html,body{
     width: 100%;
     height: 100vh;
+    background: var(--bg--color);
 }
 /* nav bar 1 */
 .nav-section{
@@ -439,18 +440,22 @@ html,body{
 .section-2{
     margin-top: 40%;
     width: 100%;
-    height: 215px;
+    height: 415px;
     padding: 25px;
     padding-top: 0;
     padding-bottom: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+
 }
 .section-2 .sidle-section-2{
     width: 100%;
     height:100%;
     padding: 10px 10px 10px 10px;
-    background-color: white;
+    background: white;
     position: relative;
+    margin-top: -50px;
+    margin-bottom: 70px;
+
 }
 .section-2 .sidle-section-2 h3{
     font-size: 20px;
@@ -499,7 +504,7 @@ html,body{
     width: 50px;
     text-align: center;
     cursor: pointer;
-    top: 100%;
+    top: 40%;
     position: absolute;
     border: 3px solid transparent;
 }
@@ -530,3 +535,253 @@ html,body{
     margin-top: 100%;
 }
 /* sectio-2 end */
+
+/* shopping section start */
+.shopping-items{
+    border-top: 1px solid var(--fav-second-color);
+    border-bottom:1px solid var(--fav-second-color) ;
+    margin-top: 22%;
+    background: var(--main-color);
+    width: 100%;
+    height: 500px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+.shopping-items::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    cursor: pointer;
+}
+.shopping-items::-webkit-scrollbar-thumb{
+    border-radius: 9px;
+    cursor: pointer;
+}
+.shopping-items h3{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    position: sticky;
+}
+.shopping-items .shopping-list{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px;
+    gap: 30px;
+}
+.shopping-items .shopping-list .item{
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+
+}
+.shopping-items .shopping-list .item img{
+    width: 150px;
+    height: 150px;
+}
+.shopping-items .shopping-list .item a{
+    text-decoration: none;
+    font-size: 14px;
+    width: 150px;
+    margin-bottom: 2px;
+    color: #007185;
+}
+.shopping-items .shopping-list .item a:hover{
+    color: #cc0c39;
+    cursor: pointer;
+}
+.shopping-items .shopping-list .item .stars .fa-solid,
+.shopping-items .shopping-list .item .stars .fa-regular
+{
+    font-size: 14px;
+    color: #f5b869;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.shopping-items .shopping-list .item p{
+    font-size: 16px;
+    cursor: pointer;
+}
+.shopping-items .shopping-list .item p .fa-solid{
+    font-size: 18px;
+    margin-right: 5px;
+}
+.shopping-items .shopping-list .item span{
+    font-size: 12px;
+    width: 150px;
+}
+
+/* shopping section end */
+/* footer section start */
+.footer-section{
+    background-color: white;
+}
+.footer-section .sign-in-2{
+    background: var(--main-color);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--text--color);
+}
+.footer-section .sign-in-2 span{
+    font-size: 13px;
+    color: #0f1111;
+}
+.footer-section .sign-in-2  a button{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button--color);
+    color: #0f1111;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.footer-section .sign-in-2  a button:hover{
+    background-color: #f5b869;
+}
+.footer-section .sign-in-2 span a{
+    text-decoration: none;
+    color: #007185;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.footer-section .sign-in-2 span a:hover{
+    color: #cc0c39;
+}
+.footer-section .back-to-top{
+    margin-top: 10px;
+    background-color:#485769;
+    color: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-section .back-to-top h3{
+    font-size:14px ;
+    font-weight: 400;
+}
+.footer-section .footer-container{
+    background-color:var(--fav-second-color);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid white;
+}
+.footer-section .footer-container .footer-list{
+   margin: 50px;
+   color: white;
+}
+.footer-section .footer-container .footer-list h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.footer-section .footer-container .footer-list ul{
+    list-style: none;
+    line-height: 30px;
+    
+}
+.footer-section .footer-container .footer-list li{
+    font-size: 14px;
+    color: #ddd;
+}
+.footer-section .footer-container .footer-list li:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.footer-section .language,
+.footer-section .country
+{
+    background-color: var(--fav-second-color);
+    padding-top: 40px;
+}
+.footer-section .language{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+}
+.footer-section .language img{
+    height: 30px;
+}
+.footer-section .language select{
+    width: 120px;
+    height: 30px;
+    background-color:var(--fav-second-color);
+    text-align: center;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+}
+.footer-section .country ul{
+    margin-top: -10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+}
+.footer-section .country ul li{
+    font-size: 12px;
+    font-weight: 300;
+    color: #ddd;
+    padding-bottom: 20px;
+}
+.footer-section .country ul li:hover{
+    text-decoration-line: underline;
+}
+.footer-section .last-section{
+    background-color: var(--fav--color );
+    width: 100%;
+    height: 100%;
+}
+ .last-container-list{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    width: 800px;
+    height: 400px;
+    gap: 80px;
+    cursor: pointer;
+    text-align: left;
+}
+.footer-section .last-section .last-section-list h6{
+    color: #ddd;
+    font-size: 12px;
+    font-weight: 300;
+}
+.footer-section .last-section .last-section-list span{
+    color: rgba(221, 221, 221, 0.651);
+    font-size: 10px;
+}
+
+.last-container-d{
+    display: flex;
+    flex-direction: row;
+    gap: 82px;
+}
+.copyrights{
+    margin-top: -40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ddd;
+    font-size: 14px;
+}
+/* footer section end */
