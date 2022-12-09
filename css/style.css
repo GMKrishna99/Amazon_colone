@@ -770,8 +770,12 @@ html,body{
 .footer-section .last-section .last-section-list span{
     color: rgba(221, 221, 221, 0.651);
     font-size: 10px;
+    cursor: pointer;
+    transition: 0.2s ease;
 }
-
+.footer-section .last-section .last-section-list span:hover{
+    text-decoration-line: underline;
+}
 .last-container-d{
     display: flex;
     flex-direction: row;
@@ -782,6 +786,219 @@ html,body{
     margin-bottom: 20px;
     text-align: center;
     color: #ddd;
-    font-size: 14px;
+    font-size: 12px;
+    font-weight: 300;
 }
 /* footer section end */
+
+/* sign in  */
+.signin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:left;
+    background: white;
+    height: 100%;
+}
+.signin-container .logo img{
+    margin-top: 20px;
+    width: 170px;
+}
+.signin-container .content-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(87, 87, 87, 0.205);
+    padding:40px;
+    width: 350px;
+    border-radius: 5px;
+}
+.signin-container .content-container h3{
+    font-size: 28px;
+    font-weight: 400;
+}
+.signin-container .content-container h5{
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: -6px;
+}
+.signin-container .content-container input{
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    border-radius: 2px;
+}
+.signin-container .content-container input:focus-visible{
+    border: 1px solid #ffd000 ;
+    box-shadow: 0px 0px 5px #ffd000;
+}
+.signin-container .content-container a button{
+    width: 270px;
+    border: none;
+    padding: 5px;
+    height: 40px;
+    font-size: 14px;
+    background-color:#f3cd71;
+    color: #0f1111;
+    font-weight: 300;
+}
+.signin-container .content-container a button:hover{
+    background-color:#f0be4c;
+}
+.signin-container .content-container p{
+    font-size: 12px;
+}
+.signin-container .content-container p span{
+    color: #007185;
+    cursor: pointer;
+}
+.signin-container .content-container span{
+    font-size: 12px;
+    color: #007185;
+    text-align: left;
+}
+.signin-container .content-container span:hover{
+    color: #cc0c39;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.signin-container .content-container span .fa-solid{
+    color: #969696;
+    font-size:8px;
+   
+}
+.signin-container .new-ama{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.signin-container .new-ama h4{
+    font-size: 14px;
+    font-weight: 400;
+    position: relative;
+}
+.signin-container .new-ama h4::before{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(190, 190, 190, 0.315);
+    position: absolute;
+    top: 50%;
+    left: -0%;
+}
+.signin-container .new-ama h4::after{
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(190, 190, 190, 0.315);
+    position: absolute;
+    top: 50%;
+    right: 0px;
+}
+.signin-container .new-ama a button{
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 0.5px solid black;
+    outline: none;
+    background-color: #eff1f3;
+    border-radius: 5px;
+    
+}
+.signin-container .new-ama a button:hover{
+background-color: #d3d3d3a1;
+}
+.signin-container hr{
+    background-color: #c4c4c4af;
+    border: none;
+    width: 70%;
+    height: 2px;
+}
+.low-row{
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+    font-size: 12px;
+}
+.low-row p{
+    font-size: 12px;
+    color: #007185;
+    margin-bottom: 20px;
+}
+.low-row p:hover{
+    color: #cc0c39;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin-container p{
+    font-size: 12px;
+}
+/* sign up page */
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:left;
+    background: white;
+    height: 100%;
+}
+.signup-container .logo img{
+    width: 170px;
+    margin-top: 20px;
+}
+.signup-container .singup-container-box{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(87, 87, 87, 0.205);
+    padding:40px;
+    width: 350px;
+    border-radius: 5px;
+}
+.signup-container .singup-container-box input{
+    border: 0.5px solid rgba(128, 128, 128, 0.5);
+    outline: none;
+    height: 35px;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: -10px;
+}
+.signup-container .singup-container-box input:focus-visible{
+    border: 1px solid #ffd000 ;
+    box-shadow: 0px 0px 5px #ffd000;
+}
+.signup-container .singup-container-box input::-webkit-outer-spin-button,
+.signup-container .singup-container-box input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  margin: 0;
+}
+.signup-container .singup-container-box p{
+    font-size: 12px;
+}
+.signup-container .singup-container-box p .fa-solid{
+    color: #007185;
+    font-size: 16px;
+    margin-right: 5px;
+}
+.signup-container .singup-container-box button{
+    background-color: #f3cd71;
+    border: 0.5px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.signup-container .singup-container-box button:hover{
+    background-color:#f0be4c ;
+}
+.signup-container hr{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #c4c4c4af;
+    border: none;
+    width: 70%;
+    height: 2px;
+}
